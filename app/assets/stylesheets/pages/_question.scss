@@ -14,6 +14,7 @@
   text-align: center;
   flex-direction: column;
   align-content: space-around;
+  position:relative
 }
 
 .question {
@@ -56,7 +57,7 @@
     background-position: 100% 0;
     transition: all 1s ease-in-out;
     background-image: linear-gradient(to right, $lightorange, $darkorange, $yellow, $darkorange);
-    box-shadow: 0 4px 10px 0 $lightoranfeshadow;
+    box-shadow: 0 4px 10px 0 $lightorangeshadow;
   }
 }
 
@@ -98,14 +99,14 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  border: solid 2px $darkorange;
+  border: solid 2px $lightorangeshadow;
   background-color: $lightorange;
   display: flex;
   align-items: center;
   justify-content: space-around;
   position: absolute;
-  top: 68px;
-  right: 245px;
+  top: -24px;
+  right: -24px;
   box-shadow: 0 4px 15px 0 $darkorangeshadow;
   font-size: 16px;
 

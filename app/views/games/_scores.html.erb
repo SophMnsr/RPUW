@@ -1,7 +1,7 @@
 <div class="game">
   <div id="players-desk-1round">
     <% participations.order(:id).each do |participation| %>
-      <div id="participation_<%= participation.id %>">
+      <div class="participation" id="participation_<%= participation.id %>">
         <%= render "games/desk", participation: participation %>
       </div>
     <% end %>

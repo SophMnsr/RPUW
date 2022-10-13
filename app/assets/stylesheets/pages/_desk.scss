@@ -1,30 +1,40 @@
 .game {
   display: flex;
+  position: relative;
+  width: 90vw;
+  height: 40vh;
 }
 
 #players-desk-1round {
-  width: 1200px;
-  height: 250px;
-  margin: 0 auto;
   display: flex;
-  justify-content: space-evenly;
-  padding-top: 99px;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  align-items: flex-end;
 
   img {
-    width: 90%;
+    width: 80%;
     position: absolute;
     top: -78px;
     right: 10px;
     z-index: -1;
+    background-color: transparent;
   }
+}
+
+.participation {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 #player-desk-1round {
   background-image: asset-url('round1/desk-1round.png');
-  background-size: contain;
+  background-size: cover;
   background-position: center;
-  width: 115.83px;
-  height: 164.4px;
+  height: 80%;
   position: relative;
 }
 
@@ -76,8 +86,8 @@
 .point-1round-orange {
   background: radial-gradient($yellow, #f6ca44, #F4BD3F, #F3B03A, #F2AA38, #F1A335);
   border-radius: 3px;
-  border: solid 1.5px $darkorange;
-  box-shadow: 0 4px 15px 0 $lightoranfeshadow;
+  border: solid 1.5px $lightorangeshadow;
+  box-shadow: 0 4px 15px 0 $lightorange;
   width: 37.1px;
   height: 9.34px;
   margin: 0px;

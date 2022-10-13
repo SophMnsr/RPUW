@@ -7,13 +7,13 @@
 <% flash_condition = previous_question_attempt && previous_question_attempt.success && current_question_attempt.nil? %>
 
 <div id="player-desk-1round" data-controller="desk"
-     data-desk-user-id-value="<%= participation.user.id %>"
+  data-desk-user-id-value="<%= participation.user.id %>"
 
-     data-desk-points-value="<%= flash_condition ? participation.game.previous_question.point_value : 0 %>"
-     data-desk-previous-value="<%= participation.game.previous_attempts.find { |at| at.success }&.participation == participation %>">
+  data-desk-points-value="<%= flash_condition ? participation.game.previous_question.point_value : 0 %>"
+  data-desk-previous-value="<%= participation.game.previous_attempts.find { |at| at.success }&.participation == participation %>">
 
 
-  <%= image_tag "avatar/#{participation.user.photo.filename}.png" %>
+  <%= cl_image_tag participation.user.photo.key %>
   <p id="player-nickname-1round"><%= participation.user.nickname %></p>
 
   <div id="<%= participation.game.incorrect_attempt?(participation) ? 'card-point-1round-looser' : 'card-point-1round' %>">

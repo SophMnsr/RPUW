@@ -225,7 +225,7 @@ p "created 1 question!"
 
 q_20 = Question.create(content: "La ceinture d'astéroïdes est située entre quelles planètes ?", point_value: 2, theme: Theme.find_by(name: "Science"))
 Answer.create(question: q_20, content: "Mars et Jupiter", correct: true)
-Answer.create(question: q_20, content: "Jupiter et Saturn", correct: false)
+Answer.create(question: q_20, content: "Jupiter et Saturne", correct: false)
 Answer.create(question: q_20, content: "Mercure et Venus", correct: false)
 Answer.create(question: q_20, content: "La Terre et Mars", correct: false)
 q_20.save!
@@ -412,8 +412,8 @@ q_42.save!
 p "created 1 question!"
 
 q_43 = Question.create(content: "Quel est l'animal de compagnie de Ross ?", point_value: 1, theme: Theme.find_by(name: "General knowledge"))
-Answer.create(question: q_43, content: "Une perruche baptisée Suzie", correct: true)
-Answer.create(question: q_43, content: "Un singe baptisé Marcel", correct: false)
+Answer.create(question: q_43, content: "Une perruche baptisée Suzie", correct: false)
+Answer.create(question: q_43, content: "Un singe baptisé Marcel", correct: true)
 Answer.create(question: q_43, content: "Un chien baptisé Joel", correct: false)
 Answer.create(question: q_43, content: "Un chat baptisé Nina", correct: false)
 q_43.save!
